@@ -1,0 +1,5 @@
+image map use to apply link on some image shape/area
+
+<map> and <area>
+
+shape = rect, circle and poly
