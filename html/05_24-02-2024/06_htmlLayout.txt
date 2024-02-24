@@ -1,0 +1,19 @@
+as per layout 2 type of tag.
+
+(1) sementic tag 
+=> which is tell about them content 
+    <p>, <b>, <i> etc
+
+(2) non-sementic tag 
+=> which cant tell nothing about thier content 
+<div> and <span> 
+
+for create a layout used :
+<header> 
+<footer>
+<section>
+<main>
+<nav>
+<article>
+<aside>
+<div> 
