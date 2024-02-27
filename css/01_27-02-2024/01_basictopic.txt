@@ -1,0 +1,29 @@
+css full form => cascading stylesheet 
+= use to make interactive website design, set animation, responsive website etc 
+
+types / add css in webpage: 
+(1) inline => apply in any tag using style attribute.
+(2) internal => apply in <head> or <body> using <style> tag.
+(3) external => apply using external file filename.css and link with <link> tag in html file.
+
+css advanced version => 
+css preprocessor => less css, sass css, scss css 
+
+syntax : 
+(1) inline =
+    style = "property : value;" 
+
+(2) internal / external = 
+
+    selector {
+        property : value;
+    }
+
+selector : 
+(1) element selector 
+(2) class selector
+(3) id selector 
+(4) group selector 
+(5) universal / global selector 
+(6) attribute selector 
+(7) decendent selector 
