@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 450px;
+
+            /* 37% => circle incre/decre 
+                40% => left and right move
+               51% => top and bottom move  */
+            /* clip-path: circle(37% at 40% 51%); */
+
+            /* 40% => x-axes incre/decre 
+                20% => y-axes incre/decre
+                10% => left and right move
+                20% => top and bottom move  */
+            /* clip-path: ellipse(40% 20% at 10% 20%); */
+
+            /* clip-path: polygon(0% 100%, 50% 0%, 100% 100%); */
+            clip-path: polygon(-124% 0%, 50% 100%, 224% 0%);
+
+            /* https://bennettfeely.com/clippy/ */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/image.webp" alt="">
+</body>
+
+</html>
