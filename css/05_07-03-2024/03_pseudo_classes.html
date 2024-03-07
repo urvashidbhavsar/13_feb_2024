@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+        }
+        /* apply when class name equal or we set equal element */
+        tr:nth-child(odd) {
+            background-color: cornflowerblue;
+        }
+
+        tr:nth-child(even) {
+            background-color: burlywood;
+        }
+
+        a:nth-child(1) {
+            color: blue;
+            font-size: 20px;
+        }
+
+        a:nth-child(2) {
+            color: saddlebrown;
+            font-size: 20px;
+        }
+
+        tr:first-child {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:last-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>full name</th>
+            <th>position</th>
+            <th>salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>$1300</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zukerberg</td>
+            <td>Founder facebook</td>
+            <td>$1400</td>
+        </tr>
+        <tr>
+            <td colspan="4">new element</td>
+        </tr>
+    </table>
+    <div>
+        <a href="">click here</a>
+        <a href="">click here</a>
+    </div>
+</body>
+
+</html>
