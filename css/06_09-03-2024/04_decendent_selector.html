@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* decendent selector => parent-child (space) */
+        .mydiv h1 .icon{
+            color: green;
+        }
+
+        .mydiv2 h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h1><span class="icon">hello world</span></h1>
+    </div>
+    <div class="mydiv2">
+        <h1>Hello world</h1>
+    </div>
+</body>
+
+</html>
