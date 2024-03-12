@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border: 1px solid black;
+            display: flex;
+            gap: 30px;
+            /* justify => horizontally effect
+            align => vertically effect */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div {
+            height: 100px;
+            width: 100px;
+        }
+
+        .div:nth-child(odd) {
+            background-color: blue;
+        }
+
+        .div:nth-child(even) {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+    </div>
+</body>
+
+</html>
