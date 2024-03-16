@@ -1,0 +1,13 @@
+display grid property set data / element  in table form
+
+list of property which only apply when we set display grid :
+(1) grid-template-rows 
+(2) grid-template-columns 
+(3) grid-row (grid-row-start, grid-row-end)
+(4) grid-column (grid-column-start, grid-column-end)
+(5) gap (row-gap, column-gap)
+(6) grid-area 
+(7) grid-template-areas 
+(8) justify-items 
+(9) align-items 
+(10) justify-self 

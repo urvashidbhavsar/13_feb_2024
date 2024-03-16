@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    background-color: rgb(32, 32, 32);
+}
+.header-m{
+    margin-left:50px;
+    margin-right: 50px; 
+}
+.header-p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar .logo{
+    flex: 1;
+    text-align: center;
+}
+header .navbar .logo img{
+    width: 100px;
+}
+header .navbar .topnavbar{
+    flex: 5;
+}
+header .navbar .topnavbar .top-nav{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar .topnavbar .top-nav a{
+    color: white;
+}
+header .navbar .topnavbar .top-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .navbar .topnavbar .bottom-nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+header .navbar .topnavbar .bottom-nav .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0.5;
+}
+header .navbar .topnavbar .bottom-nav .menu{
+    padding: 7px;
+}
+header .navbar .topnavbar .bottom-nav .links a{
+    color: white;
+}
+header .navbar .topnavbar .bottom-nav .cart{
+    display: flex;
+    gap: 20px;
+    color: white;
+    flex: 0.2;
+    justify-content: end;
+    align-items: center;
+}
+header .navbar .topnavbar .bottom-nav .search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+header .navbar .topnavbar .bottom-nav input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    background-color: rgb(57, 56, 56);
+    border: 1px solid rgb(57, 56, 56);
+    color:white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+header .navbar .topnavbar .bottom-nav .s-icon{
+    height: 30px;
+    width: 50px;
+    background-color: rgb(57, 56, 56);
+    border: 1px solid rgb(57, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+      border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+header .navbar .topnavbar .bottom-nav input[type="text"]::placeholder{
+    color: white;
+}
+header .navbar .topnavbar .bottom-nav input[type="text"]:focus-visible{
+    outline:none;
+}

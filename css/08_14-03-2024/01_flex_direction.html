@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            display: flex;
+
+            /* row-reverse | row | column | column-reverse */
+            /* flex-direction: row; */
+            /* nowrap | wrap | wrap-reverse */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flow is a short hand of direction and wrap */
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .div {
+            height: 100px;
+            width: 50%;
+        }
+
+        .div1 {
+            background-color: brown;
+        }
+
+        .div2 {
+            background-color: blueviolet;
+        }
+
+        .div3 {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div div1">div 1</div>
+        <div class="div div2">div 2</div>
+        <div class="div div3">div 3</div>
+    </div>
+</body>
+
+</html>

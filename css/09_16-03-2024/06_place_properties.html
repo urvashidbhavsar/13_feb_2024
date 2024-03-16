@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mydiv {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+            /* display: flex; */
+            display: grid;
+
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* align-content: center; */
+
+            /* short hand of align-content and justify content 
+                if we set flex then only effect justify content for align content use flex-wrap also.
+                if we set grid both property are effected.
+            */
+            /* place-content: center; */
+
+            /* if we set display flex justify items not effected only align-items are effected
+            if set grid, both property effected.
+            */
+            /* justify-items: center;
+            align-items: center; */
+            /* place-items: center; */
+        }
+
+        h1 {
+            /* apply in child element */
+            /* 
+            if we set flex justify self not effected only align-self effected 
+            if we set grid both property effected.           */
+            /* justify-self: center;
+            align-self: center; */
+            place-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h1>Hello</h1>
+    </div>
+</body>
+
+</html>
