@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: circleMove;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+            /* this depends on delay and direction */
+            animation-fill-mode: both;
+        }
+
+        /* create an animation */
+        @keyframes circleMove {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(600px) translateY(300px) rotate(360deg);
+                background-color: olivedrab;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>
