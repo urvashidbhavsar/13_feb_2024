@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            padding: 20px;
+            border: 1px solid black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1::after {
+            content: "";
+            height: 2px;
+            width: 200px;
+            background-color: red;
+            display: block;
+            margin-top: 9px;
+        }
+
+        .mydiv:hover h1::after {
+            animation: underline 1s ease infinite alternate;
+        }
+
+        @keyframes underline {
+            100% {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h1>About Us</h1>
+    </div>
+</body>
+
+</html>

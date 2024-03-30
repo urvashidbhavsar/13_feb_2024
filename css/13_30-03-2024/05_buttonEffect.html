@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .gridbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 40px;
+            row-gap: 50px;
+            justify-items: center;
+        }
+
+        .gridbox .div {
+            height: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        button {
+            padding: 10px 30px;
+            border: 2px solid #12342a;
+            background-color: transparent;
+            font-size: 16px;
+            transition: 0.5s ease;
+        }
+
+        .btn1:hover {
+            box-shadow: 0px 0px 5px #12342a;
+            transform: translateY(-3px);
+        }
+
+        .btn2:active {
+            box-shadow: 0px 0px 5px #12342a;
+            transform: scale(0.95);
+        }
+
+        .btn3:hover {
+            border-top: 3px solid #12342a;
+            border-bottom: 3px solid #12342a;
+        }
+
+        .btn4:hover {
+            border-left: 5px solid #12342a;
+            border-right: 5px solid #12342a;
+        }
+
+        .btn5:hover {
+            background-color: #12342a;
+            color: white;
+        }
+
+        .btn6:hover {
+            border: 2px dashed red;
+        }
+
+        .btn7 {
+            padding: 10px 30px;
+            border: 2px solid #12342a;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn7::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #12342a;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: 0.5s ease;
+        }
+
+        .btn7:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridbox">
+        <div class="div"><button class="btn1">click here</button></div>
+        <div class="div"><button class="btn2">click here</button></div>
+        <div class="div"><button class="btn3">click here</button></div>
+        <div class="div"><button class="btn4">click here</button></div>
+        <div class="div"><button class="btn5">click here</button></div>
+        <div class="div"><button class="btn6">click here</button></div>
+        <div class="div">
+            <div class="btn7" role="button">
+                <a href="#">click here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
