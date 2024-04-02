@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .image-overlay {
+            border: 1px solid black;
+            width: 300px;
+            position: relative;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .overlay {
+            position: absolute;
+            /* if slide from bottom, top property do not set effected with height */
+            top: 0;
+            bottom: 0;
+
+            /* if slide from left or right, it alternate do not set effected with width*/
+            left: 0;
+            /* right: 0; */
+            background-color: rgba(0, 0, 0, 0.873);
+            color: white;
+            display: grid;
+            place-content: center;
+            gap: 10px;
+            text-align: center;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            transition: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .image-overlay:hover .overlay {
+            /* height: 100%; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-overlay">
+        <div class="image">
+            <img src="https://d3nn873nee648n.cloudfront.net/HomeImages/Concept-and-Ideas.jpg?w=248&fit=crop&auto=format"
+                alt="">
+        </div>
+        <div class="overlay">
+            <h1>About Us</h1>
+            <div>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
