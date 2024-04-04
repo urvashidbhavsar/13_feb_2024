@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /* create a variable using --variablename */
+            --bg-gray: gray;
+            --blue: blue;
+            --h-auto: auto;
+            --w-50per: 50%;
+            --w-25per: 25%;
+            --fs-1: calc(2vw + 16px)
+        }
+
+        .mydiv {
+            height: var(--h-auto);
+            width: var(--w-50per);
+            border: 2px solid black;
+            padding: 20px;
+            background-color: var(--bg-gray);
+            color: var(--blue);
+            font-size: var(--fs-1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa sunt aperiam expedita, minima ex?
+        Eius deserunt ratione, ea modi rem in laboriosam quam molestiae asperiores alias temporibus deleniti explicabo.
+    </div>
+</body>
+
+</html>

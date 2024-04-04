@@ -1,0 +1,9 @@
+media query use to make responsive website.
+
+device name                 breakpoint 
+mobile device               max-width 576px 
+large mobile device         min-width 576px 
+tablet device               min-width 768px 
+mini leptop                 min-width 992px 
+leptop device               min-width 1200px =  1140px 
+large screen device         min-width 1400px 
