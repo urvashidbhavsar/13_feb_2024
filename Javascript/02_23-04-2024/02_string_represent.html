@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var val = 10;
+
+        // representation before ES6
+        document.write("<p>I have a Rs.", val, "</p>");
+        // concat means joint
+        document.write("<p>I have a Rs." + val + "</p>");
+
+        // after ES6
+        document.write(`<p>I have a Rs.${val}
+            </p>`)
+
+    </script>
+</body>
+
+</html>
