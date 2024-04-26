@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="showPopup()">show confirm</button>
+    <script>
+        function showPopup() {
+            var show = confirm("click on any button")
+            if (show == true) {
+                alert("click on ok")
+            } else {
+                alert("click on cancel")
+            }
+        }
+    </script>
+</body>
+
+</html>

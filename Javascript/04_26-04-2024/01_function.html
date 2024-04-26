@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // without argument function
+        function myFunc() {
+            console.log("this is function created");
+            document.write("this is function calling example")
+        }
+        // calling function
+        myFunc();
+
+        // argument calling function
+        // we can give any name in argument/parameter, but give a meaningful name
+        function newFunc(msg) {
+            document.write(`<div>${msg}</div>`);
+        }
+        // call function
+        newFunc("Hello world");
+        newFunc("welcome user")
+        newFunc("we learn javascript")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="userInput()">User input</button>
+    <script>
+        function userInput() {
+            var input = prompt("Enter your name")
+            if (input == null || input == "") {
+                alert("enter your name")
+            } else {
+                // alert(input)
+                window.open("https://www.google.com/")
+            }
+        }
+    </script>
+</body>
+
+</html>
