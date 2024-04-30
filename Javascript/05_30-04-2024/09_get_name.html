@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="gen" id=""> Male
+    <input type="radio" name="gen" id=""> Female
+
+    <p id="msg"></p>
+
+    <script>
+        let len = document.getElementsByName("gen")
+        document.getElementById("msg").innerHTML = `Length is : ${len.length}`
+    </script>
+</body>
+
+</html>

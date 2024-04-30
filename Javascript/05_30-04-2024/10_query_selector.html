@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p class="para"></p>
+    <div></div>
+    <p class="para1"></p>
+
+    <script>
+        document.querySelector("#p1").innerHTML = "select id"
+        document.querySelector(".para").innerHTML = "select class"
+        document.querySelector("div").innerHTML = "select tag"
+        document.querySelector("[class='para1']").innerHTML = "attribute"
+    </script>
+</body>
+
+</html>
