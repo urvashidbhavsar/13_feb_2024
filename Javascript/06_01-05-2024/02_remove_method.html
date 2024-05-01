@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            font-size: 40px;
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            width: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="removeCss()">remove css</button>
+    <h1 class="head1 title">Hello User</h1>
+
+    <script>
+        function removeCss() {
+            let h1 = document.querySelector(".head1")
+            // remove css
+            h1.classList.remove("title")
+            // remove element
+            // h1.remove()
+        }
+    </script>
+</body>
+
+</html>

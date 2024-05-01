@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click here</button>
+
+    <script>
+        let b = document.getElementById("btn");
+        b.addEventListener("click", function () {
+            alert("click using addeventlistner")
+        })
+
+    </script>
+
+    <button id="btn1">click 1</button>
+    <button id="btn2">click 2</button>
+    <script>
+        // we also create reusable code
+        function msg() {
+            alert("click on button")
+        }
+        document.getElementById("btn1").addEventListener("click", msg)
+
+        let b2 = document.getElementById("btn2")
+        b2.addEventListener("click", msg)
+    </script>
+</body>
+
+</html>
