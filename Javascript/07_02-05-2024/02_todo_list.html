@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="list">
+        <button onclick="return addElement()">Add</button>
+    </form>
+
+    <ul id="todo">
+    </ul>
+
+    <script>
+        function addElement() {
+            var listinp = document.getElementById("list").value;
+            var list = document.createElement("li")
+            var list_text = document.createTextNode(listinp);
+            list.appendChild(list_text);
+            document.getElementById("todo").appendChild(list);
+            document.getElementById("list").value = ""
+            return false;
+        }
+    </script>
+</body>
+
+</html>

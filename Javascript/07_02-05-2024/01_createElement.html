@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click here</button>
+    <div class="mydiv"></div>
+
+    <script>
+        let mybtn = document.getElementById("btn");
+        mybtn.addEventListener("click", DynamicElement)
+
+        function DynamicElement() {
+            var para = document.createElement("h1");
+            var text = document.createTextNode("Hello world")
+            para.appendChild(text);
+            document.querySelector(".mydiv").appendChild(para);
+
+            mybtn.removeEventListener("click", DynamicElement)
+        }
+    </script>
+</body>
+
+</html>

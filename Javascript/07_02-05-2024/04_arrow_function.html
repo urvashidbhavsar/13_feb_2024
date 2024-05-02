@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <button onclick="total()">total</button>
+    <button onclick="msg('hello user')">click 1</button>
+    <button onclick="msg('we learn js')">click 2</button>
+
+    <script>
+        let b = document.getElementById("btn")
+        b.addEventListener("click", () => {
+            alert("hello")
+        })
+
+        var total = () => {
+            alert(10 + 10)
+        }
+
+        var msg = (usermsg) => {
+            alert(usermsg)
+        }
+    </script>
+</body>
+
+</html>
