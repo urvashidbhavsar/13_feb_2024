@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "Hello User";
+
+        console.log(str.toString());
+        console.log(str.charAt(3));
+        console.log(str.charCodeAt(0)); // return ascii code
+        console.log(str.codePointAt(0));
+        console.log(str.concat(", Welcome"));
+        console.log(str.indexOf("e"));
+        console.log(str.lastIndexOf("e"));
+
+        console.log(str.search("Hello"));
+        console.log(str.search("User"));
+
+        console.log(str.match("Hello"));
+        console.log(str.match("User"));
+
+        console.log(str.replace("User", "World"));
+        console.log(str.substr(2, 8)); // start - length
+        console.log(str.substring(2, 8)); // start - end (between)
+        console.log(str.slice(2, 8));
+        console.log(str.toLowerCase());
+        console.log(str.toLocaleLowerCase());
+        console.log(str.toUpperCase());
+        console.log(str.toLocaleUpperCase());
+        console.log(str.valueOf());
+        console.log(str.split(" ")); // use for make content saparate
+        var str = "          user           "
+        console.log(str);
+        console.log(str.trim());
+    </script>
+</body>
+
+</html>

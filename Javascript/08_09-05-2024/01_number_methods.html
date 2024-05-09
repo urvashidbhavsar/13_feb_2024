@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = Number(55) // integer number
+        var n1 = Number(55.5) // floating point number
+        var str = "A"
+        console.log(n);
+
+        console.log(Number.isFinite(n1));
+        console.log(Number.isInteger(n1));//cant accept floating point
+        // console.log(Number.isNaN(str));
+        console.log(isNaN(str));
+        console.log(Number.isSafeInteger(n1)); // accept integer number
+
+        console.log(Number.parseFloat(n));
+        console.log(Number.parseFloat(n1));
+
+        console.log(Number.parseInt(n));
+        console.log(Number.parseInt(n1)); // convert floating into integer
+
+        console.log(n.toExponential(3)); // add value after fraction
+        console.log(n1.toExponential());
+
+        console.log(n.toPrecision(6));
+        console.log(n1.toPrecision(6));
+
+        console.log(n.toFixed(3));
+        console.log(n.toString());
+    </script>
+</body>
+
+</html>

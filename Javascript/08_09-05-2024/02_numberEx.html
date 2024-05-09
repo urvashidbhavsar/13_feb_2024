@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- all input type or textarea by default value considered in string -->
+    <form action="">
+        <input type="text" name="" id="n1" placeholder="Enter 1st number">
+        <input type="text" name="" id="n2" placeholder="Enter 2nd number">
+        <button onclick="return addition('n1','n2','res')">addition</button>
+    </form>
+    <p>Result is : <span id="res"></span></p>
+
+    <script>
+        function addition(a, b, msg) {
+            let num1 = document.getElementById(a);
+            let num2 = document.getElementById(b);
+            document.getElementById(msg).innerHTML = `${Number(num1.value) + Number(num2.value)}`;
+
+            return false
+        }
+    </script>
+</body>
+
+</html>
