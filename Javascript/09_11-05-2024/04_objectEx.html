@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td,
+        th {
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Employee Details : </h2>
+    <table border="1">
+        <tbody id="title">
+            <tr>
+                <th>ID</th>
+                <th>Employee Name</th>
+                <th>Date of Join</th>
+                <th>Salary</th>
+                <th>Experiance</th>
+            </tr>
+        </tbody>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        var emp = [
+            {
+                id: 1,
+                name: "Tejas Patel",
+                doj: "20-03-2023",
+                sal: 34000,
+                exp: "1 year",
+            },
+            {
+                id: 2,
+                name: "Mohan Patel",
+                doj: "21-04-2024",
+                sal: 20000,
+                exp: "1 month",
+            },
+        ]
+        let table = document.getElementById("data");
+        let i;
+        for (i = 0; i < emp.length; i++) {
+            table.innerHTML += ` <tr>
+                        <td>${emp[i].id}</td>
+                        <td>${emp[i].name}</td>
+                        <td>${emp[i].doj}</td>
+                        <td>${emp[i].sal}</td>
+                        <td>${emp[i].exp}</td>
+                    </tr>`
+        }
+    </script>
+</body>
+
+</html>

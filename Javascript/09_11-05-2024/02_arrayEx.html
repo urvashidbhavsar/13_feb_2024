@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: cadetblue;
+        }
+
+        li {
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menus">
+    </ul>
+
+    <script>
+        var nav_menus = ["Home", "Blog", "Services", "About", "Contact"]
+        var menu = document.getElementById("menus")
+        var link = document.createElement("a");
+        for (let i = 0; i < nav_menus.length; i++) {
+            menu.innerHTML += `<li>${nav_menus[i]}</li>`
+            console.log(nav_menus[i]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mycolors = ["pink", "green", "yellow", "black", "white", "magenta"];
+
+        // print value
+        // document.write(mycolors);
+        console.log(mycolors);
+
+        // single print value
+        console.log(mycolors[0]);
+        console.log(mycolors[4]);
+        console.log(mycolors[5]);
+        console.log("===== for of =====");
+
+        // using for of loop
+        let i;
+        for (i of mycolors) {
+            console.log(i);
+        }
+        console.log("==== foreach ===");
+
+        // foreach loop
+        mycolors.forEach(color => {
+            console.log(color);
+        });
+
+        // using for loop
+        console.log("==== using for loop === ");
+        for (i = 0; i < mycolors.length; i++) {
+            console.log(`${i} => ${mycolors[i]}`);
+        }
+    </script>
+</body>
+
+</html>

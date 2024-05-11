@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // details
+        var employee = {
+            firstname: "Rohit",
+            lastname: "Patil",
+            doj: "20-02-2024",
+            salary: 23000
+        }
+        // print
+        document.write(employee)
+        console.log(employee);
+        // single print value
+        document.write(`<div>${employee.firstname}</div>`)
+        document.write(`<div>${employee.lastname}</div>`)
+        document.write(`<div>${employee.doj}</div>`)
+
+        // all value prints
+        let emp;
+        for (emp in employee) {
+            if (Object.hasOwnProperty.call(employee, emp)) {
+                console.log(`${emp}=>${employee[emp]}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
