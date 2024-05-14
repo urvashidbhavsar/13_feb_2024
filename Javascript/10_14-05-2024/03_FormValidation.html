@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="myForm">
+        <form action="#">
+            <!-- name validation -->
+            <div class="row">
+                <div class="label">Name : </div>
+                <div>
+                    <input type="text" name="" id="fname" placeholder="Enter Name" onkeyup="return namePattern()"
+                        onblur="return validate()">
+                    <div>
+                        <span class="msg" id="msg1"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- no validation -->
+            <div class="row">
+                <div class="label">Mobile no : </div>
+                <div>
+                    <input type="text" name="" id="no" placeholder="Enter Mobile no" onkeyup="return mobilePattern()"
+                        onblur="return validate()" maxlength="10">
+                    <div>
+                        <span class="msg" id="msg2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label"></div>
+                <div>
+                    <button onclick="return validate()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="validate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myForm {
+    border : 2px solid black;
+    width  : 500px;
+    padding: 20px;
+}
+
+.row {
+    display              : grid;
+    grid-template-columns: 0.5fr 2fr;
+    align-items          : center;
+    padding              : 5px 0;
+}
+
+input[type="text"] {
+    height   : 30px;
+    width    : 90%;
+    padding  : 0px 10px;
+    font-size: 16px;
+    border   : 1px solid gray;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.msg {
+    color    : red;
+    font-size: 14.5px;
+}
+
+.error {
+    border: 1px solid red !important;
+}

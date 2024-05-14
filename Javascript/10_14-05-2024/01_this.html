@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // this is a keyword which is used to called current object.
+        // also called reference variable.
+        debugger
+        var person = {
+            firstname: "Urvashi",
+            mobileNo: 7956623641,
+
+            fullDatails: function () {
+                return `<div>${this.firstname} | ${this.mobileNo}</div>`
+            }
+        }
+        var per = person.fullDatails()
+        document.write(per)
+
+        // example2
+        var link = "my website link";
+        function myfunc() {
+            document.write(`<div>${this.link}</div>`)
+        }
+        myfunc()
+    </script>
+</body>
+
+</html>
