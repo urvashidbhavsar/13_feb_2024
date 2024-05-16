@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="myForm">
+        <form action="#">
+            <!-- Email validation -->
+            <div class="row">
+                <div class="label">Email : </div>
+                <div>
+                    <input type="text" name="" id="mail" placeholder="Enter Email" onblur="return validate()"
+                        onkeyup="return EmailCheck()">
+                    <div>
+                        <span class="msg" id="msg1"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Password validation -->
+            <div class="row">
+                <div class="label">Enter Password : </div>
+                <div>
+                    <input type="password" name="" id="pass" placeholder="Enter Password" onblur="return validate()"
+                        onkeyup="return passwordCheck()" maxlength="16">
+                    <div>
+                        <span class="msg" id="msg2"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- confirm password -->
+            <div class="row">
+                <div class="label">Re-enter Password : </div>
+                <div>
+                    <input type="password" name="" id="cpass" placeholder="Re-enter Password" onblur="return validate()"
+                        onkeyup="return confirmPass()">
+                    <div>
+                        <span class="msg" id="msg3"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- show pass -->
+            <div class="row">
+                <div class="label"></div>
+                <div>
+                    <input type="checkbox" onclick="ShowPassword()">
+                    <label for="">Show Password</label>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="row">
+                <div class="label"></div>
+                <div>
+                    <button onclick="return validate()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>Note : password 1st character should be in uppercase and minimum 6 character required.</div>
+    <script src="validate.js"></script>
+</body>
+
+</html>

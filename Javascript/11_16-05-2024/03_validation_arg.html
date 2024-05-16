@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="myForm">
+        <form action="#">
+            <div class="row">
+                <div class="label">Firstname : </div>
+                <div>
+                    <input type="text" name="" id="fname" onblur="return checkBlank('fname', 'msg1')"
+                        onkeyup="return checkNamePtn('fname', 'msg1')">
+                    <div>
+                        <span class="msg" id="msg1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">Middlename : </div>
+                <div>
+                    <input type="text" name="" id="mname" onblur="return checkBlank('mname', 'msg2')"
+                        onkeyup="return checkNamePtn('mname', 'msg2')">
+                    <div>
+                        <span class="msg" id="msg2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">Lastname : </div>
+                <div>
+                    <input type="text" name="" id="lname" onblur="return checkBlank('lname', 'msg3')"
+                        onkeyup="return checkNamePtn('lname', 'msg3')">
+                    <div>
+                        <span class="msg" id="msg3"></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // check blank value
+        function checkBlank(blank, msg) {
+            var inp = document.getElementById(blank)
+            if (inp.value == "" || inp.value == null) {
+                document.getElementById(msg).innerHTML = "Enter value"
+                inp.classList.add("error")
+            }
+            return false
+        }
+        // pattern
+        function checkNamePtn(ptninput, msg) {
+            var inp = document.getElementById(ptninput);
+            var ptn = /^[a-zA-Z]*$/
+            if (!ptn.test(inp.value)) {
+                document.getElementById(msg).innerHTML = "Invalid Name!!!"
+                inp.classList.add("error")
+            } else {
+                document.getElementById(msg).innerHTML = null
+                inp.classList.remove("error")
+            }
+        }
+    </script>
+</body>
+
+</html>

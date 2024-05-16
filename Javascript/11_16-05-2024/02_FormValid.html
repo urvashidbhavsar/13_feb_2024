@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="myForm">
+        <form action="#">
+            <!-- Radio button validation -->
+            <div class="row">
+                <div class="label">Gender : </div>
+                <div>
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                    <div>
+                        <span class="msg" id="msg1"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- checkbox validation -->
+            <div class="row">
+                <div class="label">Languages : </div>
+                <div>
+                    <input type="checkbox" name="check1" id="c1">
+                    <label for="">php</label>
+                    <input type="checkbox" name="check2" id="c2">
+                    <label for="">javascript</label>
+                    <input type="checkbox" name="check3" id="c3">
+                    <label for="">java</label>
+                    <div>
+                        <span class="msg" id="msg2"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- confirm password -->
+            <div class="row">
+                <div class="label">City : </div>
+                <div>
+                    <select name="" id="clist">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Baroda</option>
+                    </select>
+                    <div>
+                        <span class="msg" id="msg3"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="row">
+                <div class="label"></div>
+                <div>
+                    <button onclick="return checkValid()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="validate.js"></script>
+</body>
+
+</html>
