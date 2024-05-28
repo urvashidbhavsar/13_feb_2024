@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+    <button id="btn">click</button>
+    <hr>
+    <h1 class="text">This is heading tag</h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".text").hide(5000, function () {
+                    // alert("Content is hide")
+                    $(".text").show()
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

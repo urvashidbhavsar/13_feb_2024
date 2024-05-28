@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("selector").event_method(function(){
+        $("selector").jquery_functions()
+    })
+})
+
+jQuery(document).ready(function(){
+    jQuery("selector").event_method(function(){
+        jQuery("selector").jquery_functions()
+    })
+})
