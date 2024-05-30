@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="">Enter Value : </label>
+            <input type="text" name="" id="inp">
+        </div>
+        <div>
+            <button id="btn" onclick="return checkval()">click here</button>
+        </div>
+        <div>
+            <p>You entered : <span id="res"></span></p>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $input = $("#inp").val();
+                if ($input == "") {
+                    alert("Enter value")
+                } else {
+                    $("#res").html($input)
+                    $("#inp").val('')
+                }
+                return false
+            })
+        })
+    </script>
+</body>
+
+</html>

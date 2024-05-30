@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <button id="btn1">attribute set</button>
+    <button id="btn2">attribute remove</button>
+    <button id="btn3">get attribute</button>
+
+    <hr>
+    <img src="https://buffer.com/library/content/images/2023/10/free-images.jpg" alt="">
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // set css class and style also
+                $("img").attr("width", "300px")
+            })
+            $("#btn2").click(function () {
+                $("img").removeAttr("width")
+            })
+            $("#btn3").click(function () {
+                // get attribute 
+                alert($("img").attr("width"))
+            })
+        })
+    </script>
+
+</body>
+
+</html>
