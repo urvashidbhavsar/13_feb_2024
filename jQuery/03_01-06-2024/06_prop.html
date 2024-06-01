@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <input type="checkbox" name="" id="c1" checked="checked"> click me
+    <p></p>
+
+    <script>
+        $(document).ready(function () {
+            $("input").change(function () {
+                var inp = $(this);
+                $("p").html(
+                    ".attr(\"checked\"):<b>" + inp.attr("checked") + "</b> <br>" +
+                    ".prop(\"checked\"):<b>" + inp.prop("checked") + "</b> <br>" +
+                    ".is(\"checked\"):<b>" + inp.is("checked") + "</b> <br>"
+                )
+            })
+        })
+    </script>
+</body>
+
+</html>

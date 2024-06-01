@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- 4 methods use with clone()  => appendTo(), prepandTo(), insertBefore(), insertAfter() -->
+    <b>Hello</b> <u>world</u><br>
+
+    <button id="btn1">append to</button>
+    <button id="btn2">prepand to</button>
+    <button id="btn3">insert before</button>
+    <button id="btn4">insert after</button>
+
+    <h1 style="font-size: 40px; color: red;">
+        <p class="">My Text</p>
+    </h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("b").clone().appendTo("h1")
+            })
+            $("#btn2").click(function () {
+                $("b").clone().prependTo("h1")
+            })
+            $("#btn3").click(function () {
+                $("u").clone().insertBefore("h1")
+            })
+            $("#btn4").click(function () {
+                // $("u").clone().insertAfter("h1")
+
+                // if move element do not use clone()
+                $("u").insertAfter("h1")
+            })
+        })
+    </script>
+</body>
+
+</html>

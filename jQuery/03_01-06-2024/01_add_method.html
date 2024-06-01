@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- 4 methods  => append(), prepand(), before(), after() -->
+
+    <button id="btn1">append</button>
+    <button id="btn2">prepand</button>
+    <button id="btn3">before</button>
+    <button id="btn4">after</button>
+
+    <h1 style="font-size: 40px; color: red;">
+        <p class="">My Text</p>
+    </h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").append("<p>Hello World</p>")
+            })
+            $("#btn2").click(function () {
+                $("h1").prepend("<p>Hello World</p>")
+            })
+            $("#btn3").click(function () {
+                $("h1").before("<p>Hello World</p>")
+            })
+            $("#btn4").click(function () {
+                $("h1").after("<p>Hello World</p>")
+            })
+        })
+    </script>
+</body>
+
+</html>
