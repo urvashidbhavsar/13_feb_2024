@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .close {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <input type="text" name="" id="inputval">
+    <button id="btn">Add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $inp = $("#inputval").val()
+                if ($inp == "") {
+                    alert("Enter value")
+                } else {
+                    $("#list").append(`<li>${$inp} 
+                        <span class='close'>&Cross;</span>
+                    </li>`)
+                    $("#inputval").val('')
+                }
+
+                $(".close").on("click", function () {
+                    $(this).parent().remove()
+                })
+                return false
+            })
+        })
+    </script>
+</body>
+
+</html>

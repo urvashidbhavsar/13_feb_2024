@@ -1,0 +1,13 @@
+traversing means move through.
+
+(1) ancestor  means (parent)
+    parent, parents, parentsUntil
+
+(2) descendent means (children)
+    children, find 
+
+(3) siblings means simillar
+    siblings, next, nextAll, nextUntil, prev, prevAll, prevUntil
+
+(4) filter means searching
+    filter, first, last, eq, not 
