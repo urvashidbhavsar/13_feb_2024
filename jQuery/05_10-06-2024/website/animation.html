@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(27, 27, 27);
+        }
+
+        .mydiv {
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+            position: relative;
+        }
+
+        .upperdiv {
+            height: 200px;
+            width: 200px;
+            border: 10px solid gray;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .upperdiv .child {
+            height: 200px;
+            width: 200px;
+            border-top: 10px solid blue;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            animation: circle1 3s linear infinite;
+        }
+
+        .inner {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .lowerdiv {
+            height: 100px;
+            width: 100px;
+            border: 10px solid gray;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .lowerdiv .child {
+            height: 100px;
+            width: 100px;
+            border-top: 10px solid blue;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            animation: circle2 2s linear infinite;
+        }
+
+        @keyframes circle1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes circle2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="upperdiv">
+            <div class="child"></div>
+        </div>
+        <div class="inner">
+            <div class="lowerdiv">
+                <div class="child"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ajax => asyncronised Js and XML -->
+    <!-- use to load external file / data without reloading whole -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn">click</button>
+    <hr>
+
+    <!-- <iframe src="" frameborder="19" id="file" name="file"></iframe> -->
+    <!-- <div class="mydiv" style="padding: 5px; border: 1px solid black; width: fit-content;"></div> -->
+    <div class="mydiv"></div>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $(".mydiv").load("04_data.txt")
+                $(".mydiv").load("02_owlCarousel.html")
+            })
+        })
+    </script>
+</body>
+
+</html>
